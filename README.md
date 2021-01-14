@@ -1,2 +1,2 @@
-# react-redux-clud-application
+# react-redux-crud-application
 react-hooks practice
