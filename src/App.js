@@ -1,11 +1,17 @@
 
-function App() {
+const App = () => {
   return (
     <>
-      <label htmlFor="bar">bar</label>
-      <input type="text" onChange={() => {console.log("I am clicked")}}/>;
+      <Cat />
+      <Cat />
+      <Cat />
+      <Cat />
     </>
   )
+}
+
+const Cat = () => {
+  return <div>Miow</div>
 }
 
 // class App extends Component {
