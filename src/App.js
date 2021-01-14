@@ -1,7 +1,11 @@
-import React from "react";
 
 function App() {
-  return <h1 className="App">Hello, world!</h1>;
+  return (
+    <>
+      <label htmlFor="bar">bar</label>
+      <input type="text" onChange={() => {console.log("I am clicked")}}/>;
+    </>
+  )
 }
 
 // class App extends Component {
