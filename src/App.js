@@ -1,17 +1,28 @@
 
 const App = () => {
+  const profiles = [
+    { name: "Taro", age: 10 },
+    { name: "Hanako", age: 5},
+    { name: "NoName" }
+  ];
+
   return (
     <>
-      <Cat />
-      <Cat />
-      <Cat />
-      <Cat />
+      {
+        profiles.map((profile, index) => {
+          return <User name={profile.name} age={profile.age} key={index}/>
+        })
+      }
     </>
   )
 }
 
-const Cat = () => {
-  return <div>Miow</div>
+const User = (props) => {
+  return <div key={props.key}>Hi, I am {props.name}, and {props.age} years old</div>
+}
+
+User.defaultProps = {
+  age: 1
 }
 
 // class App extends Component {
